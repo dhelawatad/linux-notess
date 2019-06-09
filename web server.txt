@@ -1,0 +1,40 @@
+WEB SERVR
+
+apache (most popular,open source, free)
+types---apache httpd
+        apache apache2(only  ubuntu type os)
+
+free ip provider
+
+WAMP  LAMP
+
+NGINX 
+
+IIS----.net walo ke liy best
+
+apache TOMCAT----java's most powerful streaming server
+
+===To deploy any server
+
+[rpm -q (software name) ---to check whether it is installed or not]
+[rpm -qc (software name) ---to check its details ]
+
+1. install software  related to that server
+
+2.configure that server --(do relevant changes)
+
+3.start service
+---systemctl start (software name)
+---systemctl status (software name)
+
+additional steps
+
+/var/www/html ----document root for apache (isme hi rakhna hai varna website nai milegi kisi ko)
+{
+cd /var/www/html
+ echo "<h1> hello world </h1>" >a.html
+
+then add public id of instance on browser
+id/file NAME
+
+---before that add security instances of http and anywhere
