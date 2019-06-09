@@ -1,0 +1,11 @@
+ami file - amazon machine image
+
+
+difference btwn 
+cloud - (elastic computing unit, elastic block storage,amazon machine image,autoset)---Elastic compute cloud{also known as ec2}[contact ec2 to get resource plan from amazon everytime]
+physical- ram and cpu, hard drive, iso/cd/dvd,username&pass
+
+RDP- Remote Desktop protocol connection needed if u need windows from amazon
+SsH- Secure Shell protocol connection needed if u need linux from amazon
+
+virtual machine and instance are similar kind of thng

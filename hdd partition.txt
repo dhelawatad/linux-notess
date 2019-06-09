@@ -1,0 +1,52 @@
+MBR
+bios replaced by uefi (ispe gpt banta hai partition)
+
+smallest unit of hdd is sector
+1 sec=512 bytes	
+
+
+MBR                               GPt
+4P                                128P 
+(3P+1E)
+
+lsblk  (shows hard disk running)
+fdisk -l (hdd ki detail bataega)
+fdisk -l [disk name]   (detail dega)
+
+
+work=--
+1. create partition
+go in the hdd you want to see and mke partiotion of by using print command or p
+fdisk [hdd name] (to go into hdd)
+
+--- to make partition type new or n
+just keep on entering 
+
+===NEVER EVER DELETE OR FORMAT EXTENDED
+
+q will delete all the hard disk 
+wq will save and quit
+
+2. Format that partition-- NTFS(format of windows),HFS+(mac),XFS(linux)          (FAT,VFAT{formats accessible to all os})
+
+----xkfs.xfs (disk name to be formated )
+---mkfs.(double tab) {will show what all format are supported}
+
+3. mount---- /dev/xvdf1 --->connect to os
+
+os--- /dev/xvdf1 == any location -- folder /tmp/newvolume
+
+/dev/xvdf1 -- /tmp/newvolume -- link --icon in desktop
+
+==its means create  folder and map/link partition
+
+---mkdir /mnt/name of folder
+---mount /dev/name of partition  /mnt/name of folder (map nad linking)
+[df -h][df -hT]
+mount me map krne par icon nai banega
+but media me karoge to icon banega
+
+hdd ki mounting ko permanent krne ke liy hota hai
+----vim /etc/fstab (isme mount vali line dalo and xfs laga do)
+----mount -a
+then reboot
