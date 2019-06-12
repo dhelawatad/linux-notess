@@ -24,7 +24,7 @@ apache TOMCAT----java's most powerful streaming server
 2.configure that server --(do relevant changes)
 
 3.start service
----systemctl start (software name)
+---systemctl start (HTTPD/APACHE2)
 ---systemctl status (software name)
 
 additional steps
